@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+$custom-colors: (  //personaliza cores
+    "purple": rgb(98, 7, 172),
+    "BrancoFacilitaAi": #f9f9f9
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);  //atribui ao bootstrap
+
+
+@import "~bootstrap/scss/bootstrap";
